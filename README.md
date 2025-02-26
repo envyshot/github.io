@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +15,7 @@
         }
 
         /* Navigation Bar */
-        nav {
+nav {
             background-color: #222;
             padding: 15px 0;
             text-align: center;
@@ -25,20 +25,19 @@
             left: 0;
             z-index: 1000;
         }
-
-        .menu {
+.menu {
             list-style: none;
             padding: 0;
             margin: 0;
         }
 
-        .menu li {
+.menu li {
             display: inline-block;
             margin: 0 15px;
             position: relative;
         }
 
-        .menu li a {
+.menu li a {
             text-decoration: none;
             color: white;
             font-size: 18px;
@@ -47,14 +46,14 @@
             border-radius: 8px;
         }
 
-        .menu li a:hover {
+.menu li a:hover {
             background-color: #e67e22;
             color: #fff;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         }
 
-        /* Dropdown menu */
-        .dropdown-content {
+/* Dropdown menu */
+.dropdown-content {
             display: none;
             position: absolute;
             background-color: #333;
@@ -63,7 +62,7 @@
             border-radius: 5px;
         }
 
-        .dropdown-content a {
+.dropdown-content a {
             color: white;
             padding: 12px;
             display: block;
@@ -71,22 +70,22 @@
             text-decoration: none;
         }
 
-        .dropdown-content a:hover {
+.dropdown-content a:hover {
             background-color: #e67e22;
         }
 
-        .menu li:hover .dropdown-content {
+.menu li:hover .dropdown-content {
             display: block;
         }
 
-        /* Slideshow */
-        .slideshow-container {
+/* Slideshow */
+.slideshow-container {
             position: relative;
             max-width: 1000px;
             margin: 80px auto;
         }
 
-        .slides {
+.slides {
             display: none;
             width: 100%;
             height: 500px;
@@ -94,7 +93,7 @@
             border-radius: 10px;
         }
 
-        .prev, .next {
+.prev, .next {
             cursor: pointer;
             position: absolute;
             top: 50%;
@@ -107,22 +106,22 @@
             user-select: none;
         }
 
-        .prev { left: 0; }
-        .next { right: 0; }
+.prev { left: 0; }
+.next { right: 0; }
 
-        .prev:hover, .next:hover {
+.prev:hover, .next:hover {
             background-color: rgba(0, 0, 0, 0.5);
         }
 
-        /* Gallery */
-        .gallery {
+/* Gallery */
+.gallery {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             margin-top: 20px;
         }
 
-        .gallery img {
+.gallery img {
             width: 200px;
             height: 150px;
             margin: 10px;
@@ -130,16 +129,16 @@
             transition: transform 0.3s;
         }
 
-        .gallery img:hover {
+.gallery img:hover {
             transform: scale(2);
         }
 
-    </style>
+</style>
 </head>
 <body>
 
-    <!-- Navigation Bar -->
-    <nav>
+<!-- Navigation Bar -->
+<nav>
         <ul class="menu">
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
@@ -160,43 +159,39 @@
             </li>
         </ul>
     </nav>
+<!-- Home Page Header -->
+<h1>Welcome to Ahsan’s Photo Gallery</h1>
+ <!-- Slideshow -->
+<div class="slideshow-container">
+<img class="slides" src="image1.jpg" alt="Slide 1">
+<img class="slides" src="image2.jpg" alt="Slide 2">
+<img class="slides" src="image3.jpg" alt="Slide 3">
+<img class="slides" src="image4.jpg" alt="Slide 4">
+<img class="slides" src="image5.jpg" alt="Slide 5">
 
-    <!-- Home Page Header -->
-    <h1>Welcome to Ahsan’s Photo Gallery</h1>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<!-- Travel Gallery -->
+<h2>Travel Gallery</h2>
+<div class="gallery">
+<img src="travel1.jpg" alt="Amsterdam">
+<img src="travel2.jpg" alt="England">
+<img src="travel3.jpg" alt="Japan">
+<img src="travel4.jpg" alt="Paris">
+<img src="travel5.jpg" alt="Italy">
+</div>
+<!-- Portrait Gallery -->
+<h2>Portrait Gallery</h2>
+<div class="gallery">
+<img src="portrait1.jpg" alt="Portrait 1">
+<img src="portrait2.jpg" alt="Portrait 2">
+<img src="portrait3.jpg" alt="Portrait 3">
+<img src="portrait4.jpg" alt="Portrait 4">
+<img src="portrait5.jpg" alt="Portrait 5">
+</div>
 
-    <!-- Slideshow -->
-    <div class="slideshow-container">
-        <img class="slides" src="image1.jpg" alt="Slide 1">
-        <img class="slides" src="image2.jpg" alt="Slide 2">
-        <img class="slides" src="image3.jpg" alt="Slide 3">
-        <img class="slides" src="image4.jpg" alt="Slide 4">
-        <img class="slides" src="image5.jpg" alt="Slide 5">
-
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    </div>
-
-    <!-- Travel Gallery -->
-    <h2>Travel Gallery</h2>
-    <div class="gallery">
-        <img src="travel1.jpg" alt="Amsterdam">
-        <img src="travel2.jpg" alt="England">
-        <img src="travel3.jpg" alt="Japan">
-        <img src="travel4.jpg" alt="Paris">
-        <img src="travel5.jpg" alt="Italy">
-    </div>
-
-    <!-- Portrait Gallery -->
-    <h2>Portrait Gallery</h2>
-    <div class="gallery">
-        <img src="portrait1.jpg" alt="Portrait 1">
-        <img src="portrait2.jpg" alt="Portrait 2">
-        <img src="portrait3.jpg" alt="Portrait 3">
-        <img src="portrait4.jpg" alt="Portrait 4">
-        <img src="portrait5.jpg" alt="Portrait 5">
-    </div>
-
-    <script>
+<script>
         let slideIndex = 0;
         showSlides();
 
